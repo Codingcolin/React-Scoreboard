@@ -1,0 +1,63 @@
+{
+  "name": "react-scoreboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:w": "webpack -w",
+    "start": "httpster -p $PORT -d public",
+    "test": "jest",
+    "test:w": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "file-loader": "^1.1.11",
+    "jest": "^23.0.1",
+    "jest-enzyme": "^6.0.1",
+    "react-test-renderer": "^16.4.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.10.1",
+    "webpack-cli": "^2.1.4"
+  },
+  "jest": {
+    "bail": true,
+    "verbose": true,
+    "roots": [
+      "src"
+    ],
+    "collectCoverageFrom": [
+      "**/*.js"
+    ],
+    "coverageDirectory": "./coverage",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
+    "testEnvironment": "jsdom",
+    "transform": {
+      ".*": "./node_modules/babel-jest"
+    },
+    "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
+    "setupFiles": [
+      "./setupJest.js"
+    ]
+  }
+}
