@@ -1,17 +1,13 @@
 import React from 'react'
 import Stats from './Stats'
+import Stopwatch from './Stopwatch'
 
 const Header = () => {
   return (
     <div className="header">
       <Stats />
       <h1>Scoreboard</h1>
-      <div className="stopwatch">
-        <h2>Stopwatch</h2>
-        <div className="stopwatch-time"> 0 </div>
-        <button>Start</button>
-        <button>Reset</button>
-      </div>
+      <Stopwatch />
     </div>
   )
 }

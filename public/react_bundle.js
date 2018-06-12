@@ -4059,7 +4059,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Stats = __webpack_require__(/*! ./Stats */ \"./src/components/Stats.js\");\n\nvar _Stats2 = _interopRequireDefault(_Stats);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Header = function Header() {\n  return _react2.default.createElement(\n    'div',\n    { className: 'header' },\n    _react2.default.createElement(_Stats2.default, null),\n    _react2.default.createElement(\n      'h1',\n      null,\n      'Scoreboard'\n    ),\n    _react2.default.createElement(\n      'div',\n      { className: 'stopwatch' },\n      _react2.default.createElement(\n        'h2',\n        null,\n        'Stopwatch'\n      ),\n      _react2.default.createElement(\n        'div',\n        { className: 'stopwatch-time' },\n        ' 0 '\n      ),\n      _react2.default.createElement(\n        'button',\n        null,\n        'Start'\n      ),\n      _react2.default.createElement(\n        'button',\n        null,\n        'Reset'\n      )\n    )\n  );\n};\n\nexports.default = Header;\n\n//# sourceURL=webpack:///./src/components/Header.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Stats = __webpack_require__(/*! ./Stats */ \"./src/components/Stats.js\");\n\nvar _Stats2 = _interopRequireDefault(_Stats);\n\nvar _Stopwatch = __webpack_require__(/*! ./Stopwatch */ \"./src/components/Stopwatch.js\");\n\nvar _Stopwatch2 = _interopRequireDefault(_Stopwatch);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Header = function Header() {\n  return _react2.default.createElement(\n    'div',\n    { className: 'header' },\n    _react2.default.createElement(_Stats2.default, null),\n    _react2.default.createElement(\n      'h1',\n      null,\n      'Scoreboard'\n    ),\n    _react2.default.createElement(_Stopwatch2.default, null)\n  );\n};\n\nexports.default = Header;\n\n//# sourceURL=webpack:///./src/components/Header.js?");
 
 /***/ }),
 
@@ -4084,6 +4084,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Stats = function Stats() {\n  return _react2.default.createElement(\n    \"table\",\n    { className: \"stats\" },\n    _react2.default.createElement(\n      \"tbody\",\n      null,\n      _react2.default.createElement(\n        \"tr\",\n        null,\n        _react2.default.createElement(\n          \"td\",\n          null,\n          \"Players:\"\n        ),\n        _react2.default.createElement(\n          \"td\",\n          null,\n          \"3\"\n        )\n      ),\n      _react2.default.createElement(\n        \"tr\",\n        null,\n        _react2.default.createElement(\n          \"td\",\n          null,\n          \"Total Points:\"\n        ),\n        _react2.default.createElement(\n          \"td\",\n          null,\n          \"101\"\n        )\n      )\n    )\n  );\n};\n\nexports.default = Stats;\n\n//# sourceURL=webpack:///./src/components/Stats.js?");
+
+/***/ }),
+
+/***/ "./src/components/Stopwatch.js":
+/*!*************************************!*\
+  !*** ./src/components/Stopwatch.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Stopwatch = function Stopwatch() {\n  return _react2.default.createElement(\n    \"div\",\n    { className: \"stopwatch\" },\n    _react2.default.createElement(\n      \"h2\",\n      null,\n      \"Stopwatch\"\n    ),\n    _react2.default.createElement(\n      \"div\",\n      { className: \"stopwatch-time\" },\n      \" 0 \"\n    ),\n    _react2.default.createElement(\n      \"button\",\n      null,\n      \"Start\"\n    ),\n    _react2.default.createElement(\n      \"button\",\n      null,\n      \"Reset\"\n    )\n  );\n};\n\nexports.default = Stopwatch;\n\n//# sourceURL=webpack:///./src/components/Stopwatch.js?");
 
 /***/ }),
 
